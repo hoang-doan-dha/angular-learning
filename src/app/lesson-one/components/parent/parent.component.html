@@ -1,0 +1,12 @@
+<div style="width: 100%; height: 500px; border: 1px solid black; padding: 1rem">
+  <label>Parent Component</label>
+  <br>
+  <button (click)="getArticle()" style="padding: 10px;">Fetch An Article</button>
+  <br>
+  <div>
+    <h2>Title: {{ article?.title }}</h2>
+  </div>
+  <div>
+    <app-child [author]="article?.author"></app-child>
+  </div>
+</div>

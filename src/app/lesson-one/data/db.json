@@ -1,0 +1,14 @@
+{
+  "articles": [
+    {
+      "id": 1,
+      "title": "How to use json-server?",
+      "author": {
+        "authorId": 1,
+        "firstName": "typi",
+        "lastName": "code"
+      },
+      "description": "Help front-end developer to create Fake API services"
+    }
+  ]
+}

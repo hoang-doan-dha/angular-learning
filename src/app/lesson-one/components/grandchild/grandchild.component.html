@@ -1,0 +1,7 @@
+<div style="width: 400px; height: 150px; border: 1px solid red; padding: 1rem; margin: 2rem">
+  <label>Grandchild Component</label>
+  <div *ngIf="article$ | async as art">
+    <h3>Async Description: {{ art.description }}</h3>
+  </div>
+  <h3>Description: {{ article?.description }}</h3>
+</div>
