@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "angular-learning"
+    }
+  },
+  "defaultProject": "angular-learning",
+  "cli": {
+    "analytics": false
+  }
 }

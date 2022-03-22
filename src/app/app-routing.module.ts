@@ -1,4 +1,3 @@
-import { LessonOneComponent } from './lesson-one/lesson-one.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
@@ -8,7 +7,12 @@ const routes: Routes = [
     loadChildren: () =>
       import('../app/lesson-one/lesson-one.module').then((m) => m.LessonOneModule),
   },
-  { path: '', redirectTo: 'lesson-one', pathMatch: 'full' },
+  {
+    path: 'lesson-two',
+    loadChildren: () =>
+      import('../app/lesson-two/lesson-two.module').then((m) => m.LessonTwoModule),
+  },
+  { path: '', redirectTo: 'lesson-two', pathMatch: 'full' },
 ];
 
 @NgModule({

@@ -1,0 +1,42 @@
+<div style="width: 100%; height: 600px; border: 1px solid black; padding: 1rem">
+  <label>Parent Component</label>
+  <br>
+  <div>
+    <label>Select a Genre</label>
+    <br>
+    <select [(ngModel)]="selectedGenreId" id="genre" (change)="onGenreChange($event)">
+      <option *ngFor="let genre of genres" [value]="genre.id">
+        {{ genre.name }}
+      </option>
+    </select>
+  </div>
+  <div class="child-container">
+    <div>
+      <h3>First Child: Pass data</h3>
+      <ul>
+        <li>Slowest rendering</li>
+        <li>1 Subscription</li>
+        <li>Spam Http request</li>
+      </ul>
+      <app-child [genreId]="selectedGenreId"></app-child>
+    </div>
+    <div>
+      <h3>Second Child: Nested subs</h3>
+      <ul>
+        <li><b>Fastest</b> rendering</li>
+        <li>2 Subscription</li>
+        <li>Spam Http request</li>
+      </ul>
+      <app-second-child></app-second-child>
+    </div>
+    <div>
+      <h3>Third Child: High order function</h3>
+      <ul>
+        <li><b>Average fast</b> rendering</li>
+        <li>1 Subscription</li>
+        <li><b>Cancel Http request on change</b></li>
+      </ul>
+      <app-third-child></app-third-child>
+    </div>
+  </div>
+</div>

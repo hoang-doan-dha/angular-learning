@@ -1,0 +1,62 @@
+{
+  "genres": [
+    {
+      "id": 1,
+      "name": "Novel"
+    },
+    {
+      "id": 2,
+      "name": "Romantic"
+    },
+    {
+      "id": 3,
+      "name": "Science"
+    },
+    {
+      "id": 4,
+      "name": "Technology"
+    }
+  ],
+  "books": [
+    {
+      "id": 1,
+      "genreId": 1,
+      "name": "Romio & Juliet"
+    },
+    {
+      "id": 2,
+      "genreId": 1,
+      "name": "Love book"
+    },
+    {
+      "id": 3,
+      "genreId": 2,
+      "name": "Cocacola"
+    },
+    {
+      "id": 4,
+      "genreId": 2,
+      "name": "Apple juice"
+    },
+    {
+      "id": 5,
+      "genreId": 3,
+      "name": "Lighting, storming"
+    },
+    {
+      "id": 6,
+      "genreId": 4,
+      "name": "React framework"
+    },
+    {
+      "id": 7,
+      "genreId": 4,
+      "name": "Angular framework"
+    },
+    {
+      "id": 8,
+      "genreId": 4,
+      "name": "Vue framework"
+    }
+  ]
+}
