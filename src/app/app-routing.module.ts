@@ -12,7 +12,12 @@ const routes: Routes = [
     loadChildren: () =>
       import('../app/lesson-two/lesson-two.module').then((m) => m.LessonTwoModule),
   },
-  { path: '', redirectTo: 'lesson-two', pathMatch: 'full' },
+  {
+    path: 'lesson-three',
+    loadChildren: () =>
+      import('../app/lesson-three/lesson-three.module').then((m) => m.LessonThreeModule),
+  },
+  { path: '', redirectTo: 'lesson-three', pathMatch: 'full' },
 ];
 
 @NgModule({

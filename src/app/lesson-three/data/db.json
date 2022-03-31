@@ -1,0 +1,11 @@
+{
+  "todos": [
+    { "id": 1, "title": "Learn Angular" },
+    { "id": 2, "title": "Learn React"},
+    { "id": 3, "title": "Learn Vue" },
+    { "id": 3, "title": "Master Vue"},
+    { "id": 3, "title": "Master React" },
+    { "id": 3, "title": "Practise NodeJs"  },
+    { "id": 3, "title": "Practise .NET" }
+  ]
+}
